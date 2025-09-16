@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GM Barite - Premier Barite Supplier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Lato', 'sans-serif'],
+              'serif': ['Montserrat', 'serif'],
+            },
+            colors: {
+              'background': '#EFEFEB',    // Off White
+              'surface': '#FFFFFF',
+              'primary': '#363633',      // Stone (For Text)
+              'secondary': '#888888',
+              'accent': '#003B6B',       // Deep Sea Blue
+              'accent-dark': '#002F56',
+              'border': '#B8B8B5',       // Grey
+              'footer-bg': '#363633',     // Stone (For BG)
+              'footer-text': '#EFEFEB',   // Off White
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'kenburns': 'kenburns 15s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              kenburns: {
+                '0%': { transform: 'scale(1) translate(0, 0)' },
+                '100%': { transform: 'scale(1.1) translate(-2%, 2%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
